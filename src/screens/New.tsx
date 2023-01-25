@@ -1,8 +1,21 @@
 import {ScrollView, Text, TextInput, View} from 'react-native';
 import { BackButton } from "../components/BackButton";
 import { Checkbox } from '../components/Checkbox';
+import { useState } from 'react';
 
+const availableWeekDays = [
+  'Domingo',
+  'Segunda-feira',
+  'Terça-feira',
+  'Quarta-feira',
+  'Quinta-feira',
+  'Sexta-feira',
+  'Sábado'
+];
 export function New() {
+
+  const [ weekDays, setWeekDays ] = useState<number[]>([]);
+
   return (
     <View className="flex-1 bg-background px-8 pt-16">
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -20,7 +33,17 @@ export function New() {
 
         </TextInput>
 
-        <Checkbox />
+        <Text className="font-semibold mt-4 mb-3 text-white text-base">Qual a recorrênciaw</Text>
+
+        {
+          availableWeekDays.map((weekday, index) => (
+            <Checkbox
+              key={weekday}
+              title={weekday}
+            />
+          ))
+        }
+
 
       </ScrollView>
     </View>
