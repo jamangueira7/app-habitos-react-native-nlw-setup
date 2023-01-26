@@ -1,10 +1,12 @@
 import { Alert, ScrollView, Text, TextInput, TouchableOpacity, View } from 'react-native';
-import  colors from 'tailwindcss/colors';
-import { BackButton } from '../components/BackButton';
-import { Checkbox } from '../components/Checkbox';
 import { useState } from 'react';
 import { Feather } from '@expo/vector-icons';
-import {api} from "../lib/axios";
+import  colors from 'tailwindcss/colors';
+
+import { api } from '../lib/axios';
+
+import { BackButton } from '../components/BackButton';
+import { Checkbox } from '../components/Checkbox';
 
 const availableWeekDays = [
   'Domingo',

@@ -2,7 +2,8 @@ import { Text, TouchableOpacity, TouchableOpacityProps, View } from 'react-nativ
 import { Feather } from '@expo/vector-icons';
 import Animated,
 {
-  RotateInUpLeft
+  RotateInUpLeft,
+  ZoomOut
 } from 'react-native-reanimated';
 import  colors from 'tailwindcss/colors';
 
@@ -22,6 +23,7 @@ export function Checkbox({ title, checked = false, ...rest }: Props) {
           <Animated.View
             className="h-8 w-8 bg-green-500 rounded-lg items-center justify-center"
             entering={RotateInUpLeft}
+            exiting={ZoomOut}
           >
             <Feather
               name="check"

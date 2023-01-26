@@ -2,10 +2,12 @@ import { View, Text, ScrollView, Alert } from 'react-native';
 import { useState, useCallback } from 'react';
 import { useNavigation, useFocusEffect } from '@react-navigation/native';
 import dayjs from 'dayjs';
+
+import { api } from '../lib/axios';
+
 import { Header } from '../components/Header';
 import { Loading } from '../components/Loading';
 import { DAY_SIZE, HabitDay } from '../components/HabitDay';
-import { api } from '../lib/axios';
 import { generateDatesFromYearBeginning } from '../utils/generate-dates-from-year-beginning';
 
 const weekDays = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'];
