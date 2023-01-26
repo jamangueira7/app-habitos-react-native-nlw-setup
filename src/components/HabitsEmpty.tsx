@@ -11,7 +11,7 @@ export function HabitsEmpty() {
         className="text-violent-400 text-base underline active:text-violent-500"
         onPress={() => navigate('new')}
       >
-        Comece cadastrando um
+        Comece cadastrando um.
       </Text>
     </Text>
   )
