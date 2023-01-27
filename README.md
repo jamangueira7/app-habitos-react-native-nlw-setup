@@ -47,6 +47,9 @@ Font-end WEB em React Native do projeto feito no NLW Setup. É um projeto para c
 - Entre na pasta do projeto e rode npm install (pode usar yarn install de acordo com a sua configuração).
 - Rodar o comando npx expo start.
 
+
+Para rodar o emulador do Android ou iOS siga o guia da [Rocketseat](https://react-native.rocketseat.dev/).
+
 ## 🤔 Como contribuir
 
 - Faça um fork desse repositório;
